@@ -1,0 +1,29 @@
+﻿@model AGL.Models.HomeModel
+@{
+    ViewBag.Title = "AGL";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AGL</title>
+</head>
+<body>
+    <ul>
+        <h1>Females</h1>
+        @foreach (string cat in Model.CatsOfFemlaes)
+        {
+            <li> @cat </li>
+        }
+
+        <h1>Males</h1>
+
+        @foreach (string cat in Model.CatsOfMales)
+        {
+            <li> @cat </li>
+        }
+    </ul>
+</body>
+</html>
